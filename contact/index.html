@@ -99,7 +99,7 @@
     <div class="audit-card">
       <h2>Book your free marketing audit</h2>
       <p>We look at your funnel, your channels, and your numbers — and tell you plainly what we'd focus on first. No pitch. No obligation.</p>
-      <a href="https://calendly.com/jamesgrasty/15min" target="_blank" class="audit-btn">Choose a time that works →</a>
+      <div class="calendly-inline-widget" data-url="https://calendly.com/jamesgrasty/15min?hide_gdpr_banner=1&primary_color=6B4EFF" style="min-width:280px;height:620px;border-radius:12px;overflow:hidden;background:#fff;margin:20px 0 16px;"></div>
       <p class="audit-note">Usually available within 2–3 business days</p>
       <div class="guar-sm">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1A7A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.25C17.25 22.15 21 17.25 21 12V7z"></path><path d="M9 12l2 2 4-4"></path></svg>
@@ -162,5 +162,6 @@
   if(form){form.addEventListener('submit',function(e){e.preventDefault();fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}}).then(function(r){if(r.ok){window.location.href='/thank-you/';}else{alert('Something went wrong — please email us or book a call directly.');}}).catch(function(){alert('Something went wrong — please email us or book a call directly.');});});}
 })();
 </script>
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>
